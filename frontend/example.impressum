@@ -1,0 +1,8 @@
+impressum {
+    companyName: "Keys of Gabriel";
+    address: "Saarstraße 84, 52064 Aachen, Deutschland";
+    email: "Management@keysofgabriel.de";
+    phone: "+49 123 456 789";
+    vatId: "DE123456789";
+    responsible: "Ömer Üçkale";
+}

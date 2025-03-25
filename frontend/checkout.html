@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Keys of Gabriel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="angebote.html">Angebote</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+        </ul>
+    </nav>
+</header>
+    <main class="container">
+    <section class="checkout-section">
+        <h2>Buchungsdetails</h2>
+        <div id="booking-summary">
+            <!-- Dynamically insert booking information here -->
+        </div>
+        
+        <h2>Zahlungsmethode wählen</h2>
+        <form id="payment-form">
+            <label for="payment-method">Zahlungsmethode:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="paypal">PayPal</option>
+                <option value="credit-card">Kreditkarte</option>
+                <option value="bank-transfer">Banküberweisung</option>
+            </select>
+            
+            <button type="submit">Zahlung abschließen</button>
+        </form>
+    </section>
+</main>
+    <footer>
+    <p>&copy; 2025 Keys of Gabriel. Alle Rechte vorbehalten.</p>
+    <nav>
+        <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+    </nav>
+</footer>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

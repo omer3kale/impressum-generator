@@ -1,0 +1,30 @@
+plugins {
+    id 'application'
+    id 'java'
+    id 'de.monticore.gradle' version '7.6.0'
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation 'de.se_rwth.commons:se-commons-utilities:7.5.0'
+    implementation files('libs/artifact-commons-7.5.0.jar')
+    implementation files('libs/statecharts-7.5.0.jar')
+    implementation files('libs/freemarker-2.3.31.jar')
+    implementation files('libs/monticore-runtime-7.5.0.jar')
+}
+
+application {
+    mainClass = 'ImpressumGenerator'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}

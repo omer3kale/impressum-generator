@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buchung - Keys of Gabriel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Buchung</h1>
+    </header>
+    <main class="container">
+        <section class="booking-section">
+            <h2>Wähle ein Datum und eine Zeit</h2>
+            <form id="booking-form">
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="times">Verfügbare Zeiten:</label>
+                <div id="available-times" class="times-grid">
+                    <!-- Available time slots will be inserted here dynamically -->
+                </div>
+                
+                <button type="submit">Buchung bestätigen</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Keys of Gabriel. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="js/booking.js"></script>
+</body>
+</html>

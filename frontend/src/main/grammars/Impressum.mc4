@@ -1,0 +1,36 @@
+grammar Impressum extends de.monticore.commons.secommons {
+
+  // Define the Impressum page structure
+  symbol scope Impressum =
+    "impressum" Name "{" (Section)* "}";
+
+  // Define a section in the Impressum
+  symbol Section =
+    "section" Name "{" (Content)* "}";
+
+  // Define the content types allowed in a section
+  Content =
+    (Text | Address | Contact);
+
+  // Define a text block
+  Text =
+    "text" ":" String ";";
+
+  // Define an address block
+  Address =
+    "address" "{" 
+      "name" ":" String ";" 
+      "street" ":" String ";" 
+      "city" ":" String ";" 
+      "zip" ":" String ";" 
+      "country" ":" String ";" 
+    "}";
+
+  // Define a contact block
+  Contact =
+    "contact" "{" 
+      "email" ":" String ";" 
+      "phone" ":" String ";" 
+      "website" ":" URL ";" 
+    "}";
+}

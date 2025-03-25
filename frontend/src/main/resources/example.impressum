@@ -1,0 +1,22 @@
+impressum GabrielKoehler {
+    section LegalNotice{
+        text : " This website is owned and operated by Gabriel Köhler";
+    }
+
+    section Address{
+        address {
+    name: "Keys of Gabriel";
+    street: "Saarstraße 84, 52062 Aachen, Deutschland";
+      }
+    }
+
+    section Contact{
+        contact {
+    email: "Management@keysofgabriel.de";
+    phone: "+49 176 55424121";
+    vatId: "DE123456789";
+    responsible: "Gabriel Köhler";
+    website: "keysofgabriel.de";
+        }
+    }
+}
